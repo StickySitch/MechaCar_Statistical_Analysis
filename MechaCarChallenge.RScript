@@ -1,4 +1,4 @@
-# Deliverable 1
+## DELIVERALBE 1
 
 # Loading dplyr library
 library(dplyr)
@@ -12,3 +12,28 @@ lm(mpg ~ vehicle_weight + vehicle_length + spoiler_angle + ground_clearance + AW
 
 # Summarizing our linear regression results
 summary(lm(mpg ~ vehicle_weight + vehicle_length + spoiler_angle + ground_clearance + AWD, data=mechaCar_Mpg_Df))
+
+
+## DELIVERABLE 2
+
+# Reading in the "Suspension_Coil.csv" file
+suspension_df <- read.csv('Suspension_Coil.csv', stringsAsFactors = F)
+
+
+# Creating a summary table of the suspension data
+suspension_summary <- suspension_df %>% summarize(Mean_PSI=mean(PSI),
+                                          Median_PSI=median(PSI),
+                                          Var_PSI=var(PSI),
+                                          Std_Dev_PSI=sd(PSI),
+                                          Num_Coil=n(), .groups = 'keep') 
+
+
+# Creating a summary table of suspension data based on lot number
+lot_sumamry <- suspension_df  %>% group_by(Manufacturing_Lot) %>% summarize(
+                                          Mean_PSI=mean(PSI),
+                                          Median_PSI=median(PSI),
+                                          Var_PSI=var(PSI),
+                                          Std_Dev_PSI=sd(PSI),
+                                          Num_Coil=n(), .groups = 'keep')
+                                          
+                                          

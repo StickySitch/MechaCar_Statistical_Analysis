@@ -1,0 +1,14 @@
+# Deliverable 1
+
+# Loading dplyr library
+library(dplyr)
+
+# Reading in the "MechaCar_mpg.csv" file, creating a dataframe
+mechaCar_Mpg_Df <- read.csv('MechaCar_mpg.csv',stringsAsFactors = F)
+
+
+# Performing linear regression
+lm(mpg ~ vehicle_weight + vehicle_length + spoiler_angle + ground_clearance + AWD, data=mechaCar_Mpg_Df)
+
+# Summarizing our linear regression results
+summary(lm(mpg ~ vehicle_weight + vehicle_length + spoiler_angle + ground_clearance + AWD, data=mechaCar_Mpg_Df))

@@ -37,3 +37,20 @@ lot_sumamry <- suspension_df  %>% group_by(Manufacturing_Lot) %>% summarize(
                                           Num_Coil=n(), .groups = 'keep')
                                           
                                           
+## DELIVERABLE 3
+# using the t-test to determine if the PSI of all manufacturing lots are #statistically different from the population mean of 1,500 pounds per #square inch.
+t.test(suspension_df$PSI,mu=1500)
+
+
+# using the t.test to determine if the PSI of EACH manufacturing lot is
+#statistically different from the population mean of 1,500 pounds per #square inch.
+
+#Assigning lot subsets
+lot1 <- subset(suspension_df, Manufacturing_Lot=="Lot1")
+lot2 <- subset(suspension_df, Manufacturing_Lot=="Lot2")
+lot3 <- subset(suspension_df, Manufacturing_Lot=="Lot3")
+
+# Running t.test of each subset(lot)
+t.test(lot1$PSI,mu=1500)
+t.test(lot2$PSI,mu=1500)
+t.test(lot3$PSI,mu=1500)

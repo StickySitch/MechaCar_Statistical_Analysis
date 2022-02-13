@@ -56,20 +56,24 @@ Once again, we are checking to see that the variance of the suspension coils doe
 ## T-Tests on Suspension Coils
 ![T-Test All Data](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/Images/oneSampleAll.png)
 
+#### T-test All Lots
 Above you can see the t-test results of **all manufacturing lots**. 
 
 At the bottom of our output we can see the **mean psi** of `1498.78`; This was also displayed in our overall lot summary above. With a **p-value** of `0.06028`, we must **fail to reject our null hypothesis** due to the fact that our **p-value is greater** than our **assumed significance level** of `0.05%`. There is insufficient evidence to show that all lots are responsible for the psi issues. In other words, with this data presented, there is no clear reason for the production issues.
 
 Just like earlier, let's see what we can find when we dig a little deeper.
 
+#### T-test for lot 1
 ![T-Test Lot1](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/Images/oneSampleLot1.png)
 
 **Lot 1** is right on point! These guys know their job and are doing it well! The psi mean of lot 1 is exactly where it needs to be; As displayed by the **mean** of `1500`, which is right on the dot per the design specifications. Also, the **p-value** of `1` indicates that we must **fail to reject our null hypothesis** due to the fact that our **p-value is greater** than our **assumed significance level** of `0.05%`. There is **insufficient evidence** to show that **lot 1** is responsible for the psi standards issues.
 
+#### T-test for lot 2
 ![T-Test Lot2](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/Images/oneSampleLot2.png)
 
 **Lot 2** is also full of superstars! They aren't number one on the chart like lot 1, but they are a close second! **Lot 2** has a **mean psi** of `1500.2`; Just about the design specifications ideal psi of `1500`. Just like lot 1, we must **fail to reject our null hypothesis** due to the fact that our **p-value is greater** than our **assumed significance level** of `0.05%`.  The **p-value** of lot 2 is `0.6072`. With this information we know that there **insufficient evidence** to show that **lot 2** is responsible for the psi standards issues.
 
+#### T-test for lot 3
 ![T-Test Lot3](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/Images/oneSampleLot3.png) 
 
 **Lot 3** as you may have guessed from the summary data earlier is going to be a different story; So let's get into it. 

@@ -14,6 +14,7 @@ Our `MechaCar_mpg.csv` holds data for the following metrics:  Vehicle length, ve
 ### Linear Regression Resulting Model:
 
 ![Linear model](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/Images/LinearRegSummary.png)
+
 #### Data Statistical Summary:
 
 Above you can see the results from our linear regression model. With these results, we can see the following:
@@ -35,12 +36,14 @@ In order to determine if the manufacturing process is consistent across each pro
 #### Suspension  Summary: All Lots
 
 ![Suspension Summary](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/Images/suspensionSummary.png)
+
 ##### Does the current manufacturing data meet this design specifications?
 Above is a summary of **all** manufacturing lots MechaCar suspension coil data.
 - The design specification dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. With this is mind, we can take a look at our `Var_PSI` column and see a value of `62.29356`; Significantly lower than the allowed variance maximum. Let's dive a little deeper into each manufacturing lot to find out their level of psi variance.
 
 #### Suspension  Summary: Lots 1, 2 & 3
 ![Lot Summary](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/Images/lotsummary.png)
+
 Once again, we are checking to see that the variance of the suspension coils does **not** exceed 100 pounds per square inch; But this time, we are looking at each manufacturing lot.
 - **`Manufacturing Lot 1`**
 	- **Lot 1** has a variance value of `0.9795918`psi; Well below the design specification maximum of 100psi. **Lot 1** is **not** the issue.
@@ -52,6 +55,7 @@ Once again, we are checking to see that the variance of the suspension coils doe
 
 ## T-Tests on Suspension Coils
 ![T-Test All Data](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/Images/oneSampleAll.png)
+
 Above you can see the t-test results of **all manufacturing lots**. 
 
 At the bottom of our output we can see the **mean psi** of `1498.78`; This was also displayed in our overall lot summary above. With a **p-value** of `0.06028`, we must **fail to reject our null hypothesis** due to the fact that our **p-value is greater** than our **assumed significance level** of `0.05%`. There is insufficient evidence to show that all lots are responsible for the psi issues. In other words, with this data presented, there is no clear reason for the production issues.
@@ -59,12 +63,16 @@ At the bottom of our output we can see the **mean psi** of `1498.78`; This was a
 Just like earlier, let's see what we can find when we dig a little deeper.
 
 ![T-Test Lot1](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/Images/oneSampleLot1.png)
+
 **Lot 1** is right on point! These guys know their job and are doing it well! The psi mean of lot 1 is exactly where it needs to be; As displayed by the **mean** of `1500`, which is right on the dot per the design specifications. Also, the **p-value** of `1` indicates that we must **fail to reject our null hypothesis** due to the fact that our **p-value is greater** than our **assumed significance level** of `0.05%`. There is **insufficient evidence** to show that **lot 1** is responsible for the psi standards issues.
 
 ![T-Test Lot2](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/Images/oneSampleLot2.png)
+
 **Lot 2** is also full of superstars! They aren't number one on the chart like lot 1, but they are a close second! **Lot 2** has a **mean psi** of `1500.2`; Just about the design specifications ideal psi of `1500`. Just like lot 1, we must **fail to reject our null hypothesis** due to the fact that our **p-value is greater** than our **assumed significance level** of `0.05%`.  The **p-value** of lot 2 is `0.6072`. With this information we know that there **insufficient evidence** to show that **lot 2** is responsible for the psi standards issues.
 
-![T-Test Lot3](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/Images/oneSampleLot3.png) **Lot 3** as you may have guessed from the summary data earlier is going to be a different story; So let's get into it. 
+![T-Test Lot3](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/Images/oneSampleLot3.png) 
+
+**Lot 3** as you may have guessed from the summary data earlier is going to be a different story; So let's get into it. 
 **Lot 3**, as mentioned earlier in the summary information, has the issue causing the production inconsistencies. Further solidifying this is the `t-test` results presented above for lot 3. The **mean psi** of **Lot 3** is `1496.14`. On top of this, the **p-value** is `0.04168`, indicating that we must **reject our null hypothesis**  due to the fact that our **p-value is less** than our **assumed significance level** of `0.05%`. In other words, we must assume our alternative hypothesis: `The true mean is not equal to 1500`. Again, in other words, **Lot 3** is not up to production standards and needs to be evaluated to decide what the next course of action would be in order to fix production.
 
 ## Study Design: MechaCar vs Competition

@@ -5,7 +5,7 @@ AutosRUs' has  a new prototype called `MechaCar`. MechaCar is suffering from pro
 - `Software:` [R Studio](https://www.rstudio.com/) **|** [R](https://www.r-project.org/)
 - `Data Sources:` [MechaCar_mpg.csv](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/MechaCar_mpg.csv) **|** [Suspension_Coil.csv](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/Suspension_Coil.csv)
 - `Libraries:` [dplyr](https://www.rdocumentation.org/packages/dplyr/versions/0.7.8)
-- `Source Code:` [MechaCarChallenge.RScript](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.RScript)
+- `Source Code:` [MechaCarChallenge.RScript](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.RScript) **|** [MechaCarChallenge.R](https://github.com/StickySitch/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.R)
 
 ## Linear Regression to Predict MPG
 The `MechaCar_mpg.csv` dataset contains mpg(miles per gallon) test results for 50 prototype MechaCars. To decide the ideal vehicle for performance and efficiency, these prototypes consist on different production specifications. 
